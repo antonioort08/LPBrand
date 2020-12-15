@@ -30,7 +30,7 @@ this.token||(this.token=b.data);this.disposed||!this.hosted||this.ready||(d=!0)}
                 if (this.readyState == 4 && this.status == 200) {
                    // Typical action to be performed when the document is ready:
                   // document.getElementById("info").innerHTML = xhttp.responseText;
-                    document.getElementById("info").innerHTML = data;
+                    document.getElementById("info").innerHTML = JSON.stringify(data);
                 }
             };
             xhttp.open("GET", `https://www.omdbapi.com/?t=${q}&apikey=11291606`, true);
