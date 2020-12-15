@@ -29,11 +29,10 @@ this.token||(this.token=b.data);this.disposed||!this.hosted||this.ready||(d=!0)}
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                    // Typical action to be performed when the document is ready:
-                  // document.getElementById("info").innerHTML = xhttp.responseText;
-                    document.getElementById("info").innerHTML = JSON.stringify(data);
+                   document.getElementById("info").innerHTML = xhttp.responseText;
                 }
             };
-            xhttp.open("GET", `https://www.omdbapi.com/?t=${q}&apikey=11291606`, true);
+            xhttp.open("GET", `https://www.omdbapi.com/?t=${q}&apikey=8b20a637`, true);
             xhttp.send();
         }
         console.log(data);
