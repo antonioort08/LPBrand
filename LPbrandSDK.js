@@ -21,7 +21,6 @@ this.token||(this.token=b.data);this.disposed||!this.hosted||this.ready||(d=!0)}
 });
 
     var onSuccess = function(data) {
-        
         if (data[data.length - 1].source != 'agent') {
             var q = data[data.length - 1].text;
             var e = document.getElementById('info')
